@@ -17,9 +17,9 @@ pipeline {
             }
         }
 
-        stage('dependencies') {
+        stage('checking dependencies') {
             steps {
-                dir('test') { // Navigate to the dependencies directory
+                dir('dependencies') { // Navigate to the dependencies directory
                     sh 'ls -al'
                     // Example: run tests or scripts related to dependencies
                     // e.g., sh './dependency1/test.sh'
